@@ -15,37 +15,37 @@
             <div class="col-md-3"></div>
             <div class="col-md-5 border border-warning p-5 " style="justify-content: center; align-items: center;">
                 <div class="d-flex">
-                    <input type="text" placeholder="0" class="form-control bg-primary-subtle">
-                <button style="width: 30%; height: 30%;" class="btn btn-danger ms-2 p-3" onchange="change()"> AC </button>
+                    <input id="result" type="text" placeholder="0" class="form-control bg-primary-subtle " style="text-align: right;" readonly>
+                <button style="width: 30%; height: 30%;" class="btn btn-danger ms-2 p-3" onclick="cleard()"> AC </button>
                
                 </div>
                 <div class="d-flex mt-3">
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 7 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 8 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 9 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onchange="change()"> &divide </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(7)"> 7 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(8)"> 8 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(9)"> 9 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onclick="display(`/`)"> &divide </button>
                 </div>
                 <div class="d-flex mt-3">
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 4 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 5 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 6 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onchange="change()"> &#215 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(4)"> 4 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(5)"> 5 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(6)"> 6 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onclick="display(`*`)"> &#215 </button>
                 </div>
                 <div class="d-flex mt-3">
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 1 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 2 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 3 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onchange="change()"> &#8722 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(1)"> 1 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(2)"> 2 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(3)"> 3 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onclick="display(`-`)"> &#8722 </button>
                 </div>
                 <div class="d-flex mt-3">
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> 0 </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> . </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onchange="change()"> / </button>
-                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onchange="change()"> &#43; </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(0)"> 0 </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(`.`)"> . </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-primary ms-2 p-3" onclick="display(`/`)"> / </button>
+                    <button style="width: 30%; height: 30%;" class="btn btn-warning ms-2 p-3" onclick="display(`+`)"> &#43; </button>
                 </div>
                 <div class="d-flex mt-3">
-                    <button style="width: 30%; height: 30%; " class="btn btn-primary  ms-2 p-3" onchange="change()"> &#10502 </button>
-                    <button style="width: 100%; height: 30%;" class="btn btn-warning ms-2 p-3" onchange="change()"> = </button>
+                    <button style="width: 30%; height: 30%; " class="btn btn-primary  ms-2 p-3" onclick="backs()"> &#10502 </button>
+                    <button style="width: 100%; height: 30%;" class="btn btn-warning ms-2 p-3" onclick="equal()"> = </button>
                 </div>
                 
                     
@@ -55,4 +55,6 @@
         </div>
     </section>
 </body>
+
+<script src="./cal.js"></script>
 </html>
